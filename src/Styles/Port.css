@@ -1,0 +1,335 @@
+.container-fluid {
+  color: white;
+  /* background-image: linear-gradient(to right, #434343 0%, black 100%);; */
+}
+.container-make {
+  padding-left: 5%;
+  padding-right: 5%;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+.port {
+  color: white;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile {
+    padding: 5px;
+    justify-content: flex-start; /* Example adjustment for smaller screens */
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+.view-resume {
+  background-color: whitesmoke;
+  border: 0;
+  border-radius: 56px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu,
+    "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.view-resume:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  width: 92%;
+}
+
+.view-resume:hover {
+  box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
+    rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .view-resume {
+    font-size: 16px;
+    padding: 10px 33px;
+  }
+}
+
+.contact-info {
+  background-color: #0dc971;
+  border: 0;
+  border-radius: 56px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu,
+    "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.contact-info:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  width: 92%;
+}
+
+.contact-info:hover {
+  box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
+    rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .contact-info {
+    font-size: 16px;
+    padding: 10px 33px;
+  }
+}
+.icon {
+  font-size: 50px;
+  border-radius: 20px;
+}
+
+.social {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+html {
+  scroll-behavior: smooth;
+}
+.education {
+  font-weight: bold;
+  font-size: 3em;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.company-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.skills-shadow {
+  transform:
+    /* perspective(750px) */ translate3d(0px, 0px, -250px)
+    /* rotateX(27deg) */ scale(0.9, 0.9);
+
+  /* border: 5px solid #e6e6e6; */
+  box-shadow: 0 70px 40px 20px rgba(36, 8, 8, 0.2);
+  transition: 0.4s ease-in-out transform;
+
+  &:hover {
+    transform: translate3d(0px, 0px, -250px);
+  }
+}
+
+.headers {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/* Add this CSS to your stylesheet */
+.nav-link-hover-underline {
+  position: relative;
+  color: #0dc971;
+  font-weight: bold;
+  text-decoration: none; /* Remove default underline */
+}
+
+.nav-link-hover-underline::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Adjust the thickness of the underline */
+  display: block;
+  margin-top: 5px; /* Adjust the distance from the text */
+  right: 0;
+  background: #0dc971;
+  /* background-color: ; */
+  color: #0dc971;
+  /* Underline color */
+  transition: width 0.3s ease, right 0.3s ease;
+}
+
+.nav-link-hover-underline:hover::after {
+  width: 100%;
+  right: 0;
+}
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+.disabled {
+  background-color: whitesmoke;
+  border: 0;
+  border-radius: 56px;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  /* font-family: system-ui, -apple-system, system-ui, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif; */
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  -moz-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: not-allowed;
+}
+
+.disabled:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  transition: all 0.3s;
+  width: 92%;
+}
+
+.disabled:hover {
+  box-shadow: rgba(255, 255, 255, 0.2) 0 3px 15px inset,
+    rgba(0, 0, 0, 0.1) 0 3px 5px, rgba(0, 0, 0, 0.1) 0 10px 13px;
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .disabled {
+    font-size: 16px;
+    padding: 10px 33px;
+  }
+}
+.contact-info-container .disabled {
+  cursor: not-allowed !important;
+}
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.section-container {
+  font-size: 18px;
+  padding: 15px;
+  text-indent: 20px;
+  text-align: justify;
+  line-height: 2;
+}
+/* Port.css */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slide-in from left animation */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide-in from right animation */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Applying animations to sections */
+.fade-in {
+  animation: fadeIn 5s ease-in-out;
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-in-out;
+}
